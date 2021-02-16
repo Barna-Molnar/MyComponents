@@ -1,4 +1,13 @@
-.login-container {
+.login {
+    display: grid;
+    grid-gap: 2rem;
+    margin: auto auto;
+    font-size: 1.6rem;
+    text-align: center;
     width: 30rem;
-    background-color: red;
+    border: 1px solid black;
+    div {
+        display: grid;
+        text-align: start;
+    }
 }

@@ -1,47 +1,33 @@
 import React, { Component } from "react";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 import "./LoginPage.scss";
 
 const LoginPage = () => {
   return (
-    <div className="login-container">
-      <form className="">
-        <div className="login-page__form__input-group">
-          <input
-            onChange={(e) => {}}
-            value={5}
-            type="text"
-            placeholder="username"
-            required
-          />
-          <label htmlFor="name" className="login-page__form__label">
-            username
-          </label>
+    <div>
+      <form action="action" className="login">
+        <h2>LOG IN</h2>
+        <div>
+          <label htmlFor="fname">First Name</label>
+          <input type="text" id="fname" name="fname" placeholder="Barnabas" />
         </div>
-
-        <input
-          onChange={(e) => {}}
-          value={5}
-          maxLength="4"
-          type="password"
-          placeholder="password"
-        />
-        <button
-          className={"loginButton"}
-          onClick={(e) => {
-            e.preventDefault();
-            console.log();
-            this.props.login(this.state.username, this.state.pin);
-            this.setState({
-              username: "",
-              pin: "",
-            });
-          }}
-        >
-          login
-        </button>
+        <div>
+          <label htmlFor="lname">Larst Name</label>
+          <input type="text" id="lname" name="lname" placeholder="Molnar" />
+        </div>
+        <input type="submit" value="Submit"></input>
       </form>
     </div>
   );
 };
 
 export default LoginPage;
+
+// <form action="/action_page.php">
+//         <label for="fname">First name:</label><br>
+//         <input type="text" id="fname" name="fname" value="John"><br>
+//         <label for="lname">Last name:</label><br>
+//         <input type="text" id="lname" name="lname" value="Doe"><br><br>
+//         <input type="submit" value="Submit">
+// </form>
