@@ -1,10 +1,9 @@
 import "./App.scss";
-import LoginPage from "./LoginPage.jsx";
+import LoginPage from "./LoginPageComp/LoginPage.jsx";
 
 function App() {
   return (
     <div className="App">
-      <h1>My Components</h1>
       <LoginPage />
     </div>
   );

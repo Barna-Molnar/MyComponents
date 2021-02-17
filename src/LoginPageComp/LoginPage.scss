@@ -1,0 +1,96 @@
+.login__container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(14, 16, 31);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr repeat(10, 10rem) 1fr;
+    grid-template-rows: 5rem 5rem repeat(5, 10rem) 1fr;
+    .circle-small {
+        width: 20rem;
+        height: 20rem;
+        background-color: #999;
+        border-radius: 20rem;
+        position: absolute;
+        left: 25%;
+        top: 5%;
+    }
+    .circle-big {
+        width: 30rem;
+        height: 30rem;
+        background-color: #999;
+        border-radius: 30rem;
+        position: absolute;
+        left: 55%;
+        top: 60%;
+    }
+    .login__form {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        // background-color: #333;
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+        background-color: rgba(255, 255, 255, 0.341);
+        height: 55rem;
+        width: 40rem;
+        border-radius: 2.5rem;
+        font-size: 1.6rem;
+        text-align: center;
+        border: 1px solid rgba(243, 236, 236, 0.719);
+        .container--title {
+            width: 100%;
+            height: 100%;
+            grid-column: 3 / 6;
+            grid-row: 2 / 3;
+            display: flex;
+            align-items: center;
+            border: 2px solid white;
+            background-color: rgba(255, 255, 255, 1.0);
+            border-radius: 1.5rem;
+            padding: .5rem 1rem;
+            h2 {
+                width: 100%;
+                color: #555;
+                font-size: 2rem;
+                font-weight: 400;
+            }
+        }
+        .container__input {
+            width: 100%;
+            height: 100%;
+            grid-column: 2 /7;
+            display: flex;
+            background-color: white;
+            outline: none;
+            border-radius: 2rem;
+            &--first {
+                grid-row: 7 /8;
+            }
+            &--last {
+                grid-row: 9 /10;
+            }
+        }
+        &__input {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background-color: white;
+            border-radius: 2rem;
+            border: none;
+        }
+        .login-btn {
+            grid-column: 3 /6;
+            grid-row: 11 /12;
+            border: transparent;
+            border-radius: 2rem;
+            outline: none;
+        }
+    }
+}
