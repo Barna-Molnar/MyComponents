@@ -1,0 +1,126 @@
+.tabs-container {
+    width: 500px;
+    margin: 5rem auto;
+    font-size: 2rem;
+    color: yellowgreen;
+    // border: 1px solid #444;
+    padding: 1rem;
+}
+
+h2 {
+    margin: 20px auto 20px auto
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.card-header {
+    border-top: none;
+}
+
+.card {
+    border: none;
+}
+
+.div.card-body {
+    .op--lend {
+        background-image: linear-gradient(to bottom right, #c8dad3, #595e56, #99a5a0);
+    }
+}
+
+.ops {
+    flex: 0 0 40%;
+    color: #333;
+    padding-right: 2rem;
+    .op {
+        &:not(:last-child) {
+            margin-bottom: 1.9rem;
+        }
+        padding: 3rem 4rem;
+        color: #444;
+        color: white;
+        font-weight: 500;
+        border-radius: 2rem;
+        h2 {
+            margin-bottom: 1.5rem;
+            font-size: 1.7rem;
+            font-weight: 600;
+            color: #333;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .input-flex {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 1rem;
+                // width: max-content;
+            }
+            .label-flex {
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding-left: 1rem;
+                div {
+                    flex: 0 0 45%;
+                }
+            }
+            &__btn {
+                border: none;
+                outline: none;
+                border-radius: .5rem;
+                font-size: 1.8rem;
+                width: 30%;
+                cursor: pointer;
+                // &--repayment {
+                //     padding: .3rem 1rem;
+                //     font-size: 1.4rem;
+                //     color: black;
+                //     ;
+                // }
+            }
+        }
+        .form__input {
+            border: none;
+            width: 50%;
+            background-color: rgba(255, 255, 255, 0.4);
+            font-family: inherit;
+            font-size: 1.5rem;
+            text-align: center;
+            color: #333;
+            padding: 0.3rem 1rem;
+            border-radius: 0.7rem;
+            transition: all 0.3s;
+            margin-right: 2rem;
+            &:focus {
+                outline: none;
+                background-color: rgba(255, 255, 255, 0.6)
+            }
+            &--message {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                width: 100%;
+            }
+        }
+    }
+    .op--lend {
+        background-image: linear-gradient(to bottom right, #c8dad3, #595e56, #99a5a0);
+    }
+    .op--borrow {
+        background-image: linear-gradient(to bottom left, #c1eb8b, #13a561);
+    }
+    .op--upload {
+        background-image: linear-gradient(to bottom left, #17bde6da, #2464f0);
+    }
+    .op--repayment {
+        background-image: linear-gradient(to bottom right, #16db37, #abcab2);
+    }
+}
