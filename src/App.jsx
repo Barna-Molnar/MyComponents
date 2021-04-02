@@ -3,12 +3,13 @@ import './App.scss';
 // import NewTabs from './NewTabs/NewTabs.jsx';
 // import Cards from './Cards/Cards.jsx';
 // import Button from './Buttons/Button.jsx';
-import BgAnim from './BgAnim/BgAnim.jsx';
+import BtnNeon from './Buttons/BtnNeon.jsx';
+// import BgAnim from './BgAnim/BgAnim.jsx';
 
 function App() {
   return (
     <div className="App">
-      <BgAnim />
+      <BtnNeon />
     </div>
   );
 }

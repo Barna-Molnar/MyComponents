@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-evenly;
     place-items: center;
+    flex-wrap: wrap;
     .btn1 {
         position: relative;
         padding: 12px 24px;
